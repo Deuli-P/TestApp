@@ -1,10 +1,10 @@
-import { Stack, useLocalSearchParams, useRouter } from "expo-router";
+import { Stack, useGlobalSearchParams, useRouter } from "expo-router";
 import { useEffect, useState } from "react";
 import { StyleSheet, Text, View } from "react-native";
 
 export default function Details() {
   const router : useRouter();
-  const params : useLocalSearchParams();
+  const params : useGlobalSearchParams();
   return (
     <View>
       <Stack.Screen
